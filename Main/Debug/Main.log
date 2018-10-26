@@ -1,7 +1,5 @@
 ﻿  Teacher.cpp
-  Student.cpp
-  Module.cpp
+c:\users\shade\documents\hku\year 2\c++\advanced\les 1\c-advanced---assignment-1 retry 2\main\teacher.cpp(1): error C2859: C:\Users\Shade\Documents\HKU\Year 2\C++\Advanced\Les 1\C-Advanced---Assignment-1 retry 2\Main\Debug\vc140.idb is not the idb file that was used when this precompiled header was created, recreate the precompiled header.
   Main.cpp
+c:\users\shade\documents\hku\year 2\c++\advanced\les 1\c-advanced---assignment-1 retry 2\main\main.cpp(6): error C2859: C:\Users\Shade\Documents\HKU\Year 2\C++\Advanced\Les 1\C-Advanced---Assignment-1 retry 2\Main\Debug\vc140.idb is not the idb file that was used when this precompiled header was created, recreate the precompiled header.
   Generating Code...
-  Main.vcxproj -> C:\Users\Shade\Documents\HKU\Year 2\C++\Advanced\Les 1\C-Advanced---Assignment-1 retry 2\Debug\Main.exe
-  Main.vcxproj -> C:\Users\Shade\Documents\HKU\Year 2\C++\Advanced\Les 1\C-Advanced---Assignment-1 retry 2\Debug\Main.pdb (Full PDB)

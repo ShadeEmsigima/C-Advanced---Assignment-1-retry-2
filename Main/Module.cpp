@@ -2,9 +2,9 @@
 #include "Module.h"
 
 
-Module::Module()
+Module::Module(std::string givenName)
 {
-
+	name = givenName;
 }
 
 

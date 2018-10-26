@@ -8,7 +8,7 @@ public:
 	std::string assStud;
 	int EC;
 
-	Module();
+	Module(std::string givenName);
 	~Module();
 
 	void setEC();

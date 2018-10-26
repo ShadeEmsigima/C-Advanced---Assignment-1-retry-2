@@ -1,5 +1,7 @@
 #pragma once
+#include <iostream>
 #include <string>
+#include "Module.h" //use this if in assignTo() type us module, not string. [WORKS]
 
 class Student
 {
@@ -13,6 +15,6 @@ public:
 	~Student();
 
 	void showEC();
-	void assignTo(std::string chosenModule);
+	void assignTo(Module* chosenModule);
 };
 

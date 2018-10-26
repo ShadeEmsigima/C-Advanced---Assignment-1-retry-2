@@ -12,6 +12,7 @@
 
 int main()
 {
+	std::cout << "PREPERATIONS ====================================================" << std::endl;
 	//make 3 modules on the heap
 	Module* Python = new Module("Python");
 	std::cout << "Heap saved module " << Python->name << std::endl;
@@ -55,6 +56,15 @@ int main()
 	Student* s10 = new Student("Pietje 10");
 	std::cout << "Heap saved student " << s10->name << std::endl;
 	
+	std::cout << std::endl;
+
+	s10->assignTo(Python);// changed the arg to Module
+
+	/*
+	NEXT
+	change the argument of chosenModule in assignTo() of teacher to type Module as well, not string.
+	Then, assign the rest of the students
+	*/
 	
 
 	std::cout << std::endl;

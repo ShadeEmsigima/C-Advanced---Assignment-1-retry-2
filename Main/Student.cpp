@@ -4,6 +4,8 @@
 
 Student::Student(std::string givenName)
 {
+	name = givenName;
+	assignedTo = "not assigned";
 }
 
 

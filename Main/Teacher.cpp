@@ -5,6 +5,7 @@
 Teacher::Teacher(std::string givenName)
 {
 	name = givenName;
+	assignedTo = "not assigned";
 }
 
 

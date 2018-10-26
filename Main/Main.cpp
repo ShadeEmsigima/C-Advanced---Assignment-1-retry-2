@@ -20,13 +20,15 @@ int main()
 	Module* CPP = new Module("C++");
 	std::cout << "Stack saved module " << CPP->name << std::endl;
 
+	std::cout << std::endl;
+
 	//make 3 teachers on the heap
 	Teacher* Valentijn = new Teacher("Valentijn");
 	std::cout << "Stack saved teacher " << Valentijn->name << std::endl;
 	Teacher* Ton = new Teacher("Ton");
 	std::cout << "Stack saved teacher " << Ton->name << std::endl;
 	Teacher* Edwin = new Teacher("Edwin");
-	std::cout << "Stack saved teacher " << Valentijn->name << std::endl;
+	std::cout << "Stack saved teacher " << Edwin->name << std::endl;
 
 
 	/*
@@ -36,6 +38,8 @@ int main()
 	std::cout << "Stack saved " << Python->name << std::endl;
 	*/
 	//make 10 students on the heap
+
+	std::cout << std::endl;
 	system("PAUSE");
 }
 

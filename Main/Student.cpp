@@ -18,5 +18,5 @@ void Student::showEC(){ // show EC points of this student
 }
 
 void Student::assignTo(Module* chosenModule) { //assign it to a module
-	std::cout<< chosenModule->name; //print out the name of the chosenModule
+	std::cout << "Assigned to " << chosenModule->name; // DEBUG print out the name of the chosenModule
 }

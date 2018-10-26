@@ -1,5 +1,8 @@
 #pragma once
+#include <iostream>
 #include <string>
+#include "Module.h"
+
 class Teacher
 {
 private:
@@ -10,6 +13,6 @@ public:
 	Teacher(std::string givenName);
 	~Teacher();
 
-	void assignTo(std::string chosenModule);
+	void assignTo(Module* chosenModule);
 };
 

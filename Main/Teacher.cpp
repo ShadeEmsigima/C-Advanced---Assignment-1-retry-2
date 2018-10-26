@@ -13,6 +13,6 @@ Teacher::~Teacher()
 {
 }
 
-void Teacher::assignTo(std::string chosenModule) {// assign it to a module
-
+void Teacher::assignTo(Module* chosenModule) {// assign it to a module
+	std::cout << "Assigned to "<<chosenModule->name; //DEBUG print out the name of the chosenModule
 }

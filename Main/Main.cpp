@@ -30,6 +30,7 @@ int main()
 	std::cout << "Heap saved teacher " << Ton->name << std::endl;
 	Teacher* Edwin = new Teacher("Edwin");
 	std::cout << "Heap saved teacher " << Edwin->name << std::endl;
+	Ton->assignTo(CPP); std::cout << std::endl; 
 
 	std::cout << std::endl;
 
@@ -55,15 +56,14 @@ int main()
 	std::cout << "Heap saved student " << s9->name << std::endl;
 	Student* s10 = new Student("Pietje 10");
 	std::cout << "Heap saved student " << s10->name << std::endl;
+	s10->assignTo(Python);
 	
 	std::cout << std::endl;
 
-	s10->assignTo(Python);// changed the arg to Module
 
 	/*
 	NEXT
-	change the argument of chosenModule in assignTo() of teacher to type Module as well, not string.
-	Then, assign the rest of the students
+	Assign the rest of the students and teachers to a module. Maybe clean up the syntax for couting
 	*/
 	
 

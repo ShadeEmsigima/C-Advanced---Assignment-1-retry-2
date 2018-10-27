@@ -5,6 +5,7 @@
 Module::Module(std::string givenName)
 {
 	name = givenName;
+	EC = 0;
 }
 
 

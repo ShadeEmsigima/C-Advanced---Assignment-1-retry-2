@@ -11,7 +11,7 @@ public:
 	Module(std::string givenName);
 	~Module();
 
-	void setEC();
+	void setEC(int givenEC);
 	void showList();
 };
 

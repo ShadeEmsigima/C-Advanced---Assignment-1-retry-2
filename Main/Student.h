@@ -9,7 +9,7 @@ private:
 public:
 	std::string name;
 	std::string assignedTo;
-	int EC;
+	int studentEC;
 
 	Student(std::string givenName);
 	~Student();

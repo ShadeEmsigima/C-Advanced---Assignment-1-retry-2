@@ -13,8 +13,8 @@ Module::~Module()
 {
 }
 
-void Module::setEC() { //set the EC points for this module
-
+void Module::setEC(int givenEC) { //set the EC points for this module
+	EC = givenEC;
 }
 
 void Module::showList() { //show this module's name,assigned teacher and assigned students

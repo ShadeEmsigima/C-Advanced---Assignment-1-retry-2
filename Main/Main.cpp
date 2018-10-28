@@ -22,13 +22,13 @@ int main()
 	
 	//make 3 modules on the heap, and add them to a vector
 	std::vector<Module*> modules;
-	Module* Python = new Module("Python"); modules.push_back(Python);
-	Module* HTML = new Module("HTML"); modules.push_back(HTML);
-	Module* CPP = new Module("C++"); modules.push_back(CPP);
+	Module* Python = new Module("Python"); Python->setEC(2); modules.push_back(Python);
+	Module* HTML = new Module("HTML"); HTML->setEC(1); modules.push_back(HTML);
+	Module* CPP = new Module("C++"); CPP->setEC(4); modules.push_back(CPP);
 	//Print the modules that were saved
-	std::cout << "Heap saved modules: ";
+	std::cout << "Heap saved modules: " << std::endl;
 	for (int i = 0; i < 3; i++) {
-		std::cout << modules.at(i)->name << " ";
+		std::cout << modules.at(i)->name << ", EC points: " << modules.at(i)->EC << std::endl;
 	}
 
 	std::cout << std::endl;
@@ -64,6 +64,7 @@ int main()
 	std::cout << std::endl;
 
 	std::cout << "ASSIGNMENT ====================================================" << std::endl;
+	std::cout << "1) Printing a list of modules and the ones assigned to it:" << std::endl<< std::endl;
 	
 	//-Print a list of modules, with students and teachers
 	std::vector<Module*>::iterator it;
@@ -85,9 +86,12 @@ int main()
 		std::cout << std::endl;
 	}
 
+	std::cout << "2) Show total EC points per student:" << std::endl << std::endl;
 
+	for (k = students.begin(); k < students.end(); k++) {
+		std::cout << (*k)->name << "'s total EC points are " << (*k)->studentEC << std::endl;
 
-
+	}
 
 
 	//		it++;

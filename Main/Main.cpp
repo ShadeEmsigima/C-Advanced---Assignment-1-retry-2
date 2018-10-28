@@ -90,13 +90,33 @@ int main()
 
 	for (k = students.begin(); k < students.end(); k++) {
 		std::cout << (*k)->name << "'s total EC points are " << (*k)->studentEC << std::endl;
-
 	}
 
 
-	//		it++;
-	//	}
-	//}
+	std::cout << std::endl;
+	std::cout << "3) Changing EC of one module, showing the list of EC points per student again:" << std::endl << std::endl;
+	
+	Python->setEC(10);
+	std::cout << "Changed EC value of module python to 10:" << std::endl;
+	for (k = students.begin(); k < students.end(); k++) {
+		if ((*k)->assignedTo == Python->name) {
+			(*k)->updateEC(Python);
+		}
+		std::cout << (*k)->name << "'s total EC points are " << (*k)->studentEC << std::endl;
+	}
+
+	std::cout << std::endl;
+	std::cout << "4) Unassign a student from a module, and show the list again:" << std::endl << std::endl;
+
+	//students.at(0)->assignTo(NULL);
+	students.at(0)->unassign();
+
+	for (k = students.begin(); k < students.end(); k++) {
+		if ((*k)->assignedTo == Python->name) {
+			(*k)->updateEC(Python);
+		}
+		std::cout << (*k)->name << "'s total EC points are " << (*k)->studentEC << std::endl;
+	}
 
 	std::cout << std::endl;
 	system("PAUSE");

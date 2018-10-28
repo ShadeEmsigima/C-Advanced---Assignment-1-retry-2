@@ -14,7 +14,8 @@ public:
 	Student(std::string givenName);
 	~Student();
 
-	void showEC();
+	void updateEC(Module* updatedModule);
 	void assignTo(Module* chosenModule);
+	void unassign();
 };
 

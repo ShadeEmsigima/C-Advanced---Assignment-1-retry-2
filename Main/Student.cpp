@@ -13,8 +13,8 @@ Student::~Student()
 {
 }
 
-void Student::showEC(){ // show EC points of this student
-	// get all ECs from assigned modules and return the total amount
+void Student::updateEC(Module* updatedModule){ // show EC points of this student
+	studentEC = updatedModule->EC;
 }
 
 void Student::assignTo(Module* chosenModule) { //assign it to a module
@@ -23,4 +23,10 @@ void Student::assignTo(Module* chosenModule) { //assign it to a module
 
 	//update the EC points:
 	studentEC = chosenModule->EC;
+}
+
+void Student::unassign() {
+	studentEC = 0;
+	assignedTo = "not assigned";
+	//std::cout << "called unassign()";
 }
